@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/dima/Software_testing/repo/pytest_redfish/pytest_redfish/tests
+collected 3 items
+
+test_redfish.py ...                                                      [100%]
+
+=============================== warnings summary ===============================
+test_redfish.py::test_auth_correct
+test_redfish.py::test_system_info
+test_redfish.py::test_power_on
+  /home/dima/Software_testing/obmc_test/lib/python3.12/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.0'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 3 warnings in 9.12s =========================
