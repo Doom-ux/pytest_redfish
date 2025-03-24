@@ -42,11 +42,11 @@ def test_system_info(session_token):
 		r = requests.get(url, headers=headers, verify=False)
 
 	except ConnectionError:
-		assert 0, "A connection error occured."
+		assert 0, "A connection error occured (func 'test_system_info')."
 	except HTTPError:
-		assert 0, "HTTP request returned an unsuccessful status code."
+		assert 0, "HTTP request returned an unsuccessful status code (func 'test_system_info')."
 	except Timout:
-		assert 0, "The request timed out while trying to get the data."
+		assert 0, "The request timed out while trying to get the data (func 'test_system_info')."
 	
 	data_dict = r.json()
 
